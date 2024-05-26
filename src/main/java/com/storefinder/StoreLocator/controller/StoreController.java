@@ -1,6 +1,5 @@
 package com.storefinder.StoreLocator.controller;
 
-//import jakarta.servlet.http.HttpServletResponse;
 import com.storefinder.StoreLocator.model.Store;
 import com.storefinder.StoreLocator.repository.SearchRepository;
 import com.storefinder.StoreLocator.repository.StoreRepository;
@@ -46,7 +45,5 @@ public class StoreController {
     public Store addPost(@RequestBody Store stores ){
         return storeRepository.save(stores);
     }
-
-
-
+    
 }

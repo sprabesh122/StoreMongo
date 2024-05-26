@@ -36,7 +36,7 @@ public class SearchRepositoryImpl implements SearchRepository {
                                         .append("path", "category"))),
                 new Document("$sort",
                         new Document("review", 1L)),
-                new Document("$limit", 1L)));
+                new Document("$limit", 3L)));
         result.forEach(doc -> stores.add(converter.read(Store.class, doc)));
 
         return stores;
